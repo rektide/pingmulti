@@ -9,13 +9,18 @@
 	"bin": {
 		"pingmulti": "./pingmulti.js"
 	},
-	"keywords": ["ping", "latency"],
+	"keywords": [
+		"ping",
+		"latency"
+	],
 	"author": "rektide de la faye",
-	"license": "X11",
+	"license": "MIT",
 	"dependencies": {
 		"byline": "^5.0.0",
+		"es6-promisify": "^5.0.0",
 		"most": "^1.7.0",
-		"most-pmap": "^1.0.0",
+		"most-node-streams": "^1.0.0",
+		"most-pmap": "^1.0.1",
 		"mri": "^1.1.0",
 		"net-ping": "^1.2.1"
 	}
