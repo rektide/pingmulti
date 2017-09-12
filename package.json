@@ -1,0 +1,22 @@
+{
+	"name": "pingmulti",
+	"version": "1.0.0",
+	"description": "Ping hosts specified on stdin",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"bin": {
+		"pingmulti": "./pingmulti.js"
+	},
+	"keywords": ["ping", "latency"],
+	"author": "rektide de la faye",
+	"license": "X11",
+	"dependencies": {
+		"byline": "^5.0.0",
+		"most": "^1.7.0",
+		"most-pmap": "^1.0.0",
+		"mri": "^1.1.0",
+		"net-ping": "^1.2.1"
+	}
+}
