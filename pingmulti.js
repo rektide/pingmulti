@@ -58,6 +58,9 @@ function run(lines, args){
 	  session= ping.createSession( args),
 	  lineStream= most.fromEvent( 'data', lines).multicast(),
 	  output= pmap(runPing, lineStream, parallel)
+	output.drain().then(function(){
+		session.close()
+	})
 	return output
 }
 
